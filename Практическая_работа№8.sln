@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Практическая_работа№8", "Практическая_работа№8\Практическая_работа№8.csproj", "{8269D2D8-226B-4BC0-9FC3-1489CB469C0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Грузовой_корабль", "Грузовой_корабль\Грузовой_корабль.csproj", "{D63E19CB-1BFE-43E0-BBE8-1610A85947CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8269D2D8-226B-4BC0-9FC3-1489CB469C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8269D2D8-226B-4BC0-9FC3-1489CB469C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8269D2D8-226B-4BC0-9FC3-1489CB469C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8269D2D8-226B-4BC0-9FC3-1489CB469C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D63E19CB-1BFE-43E0-BBE8-1610A85947CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63E19CB-1BFE-43E0-BBE8-1610A85947CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63E19CB-1BFE-43E0-BBE8-1610A85947CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63E19CB-1BFE-43E0-BBE8-1610A85947CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8A91A26-04A9-4436-90F8-948379A71AAC}
+	EndGlobalSection
+EndGlobal

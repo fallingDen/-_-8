@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Практическая_работа_8</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1682644733_papik-pro-p-smail-korabl-png-14.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Грузовой_корабль\Грузовой_корабль.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1682644733_papik-pro-p-smail-korabl-png-14.png" />
+  </ItemGroup>
+
+</Project>

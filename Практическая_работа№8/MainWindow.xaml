@@ -1,0 +1,36 @@
+﻿<Window x:Class="Практическая_работа_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практическая_работа_8"
+        mc:Ignorable="d"
+        Title="Корабли" Height="450" Width="800" Icon="/1682644733_papik-pro-p-smail-korabl-png-14.png" Background="{x:Null}">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF16BED4" Offset="0.513"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,23,375,222" Background="#FF16BED4"/>
+        <TextBox x:Name="TBГрузоподъёмность" HorizontalAlignment="Left" Margin="448,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FF16BED4"/>
+        <TextBox x:Name="TBГрузовойКорабль" HorizontalAlignment="Left" Margin="449,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FF16BED4"/>
+        <Menu VerticalAlignment="Top" Grid.ColumnSpan="4" Height="18" Background="#FFE0EC0D">
+            <MenuItem Header="О программе" Click="MenuItem_Click_О_программе" ToolTip="Информация о программе"  >
+            </MenuItem>
+            <MenuItem Header="Выход" Click="MenuItem_Click_Выход" ToolTip="Закрывает рабочую программу" >
+            </MenuItem>
+            <MenuItem Header="Анекдот" Click="MenuItem_Click_Анекдот" ToolTip="Анекдот" >
+            </MenuItem>
+        </Menu>
+        <Label Content="Модель корабля" HorizontalAlignment="Left" Margin="448,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Грузоподъёмность т." HorizontalAlignment="Left" Margin="448,80,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="B_Записать" Content="Записать" HorizontalAlignment="Left" Margin="617,83,0,0" VerticalAlignment="Top" Width="142" Click="B_Записать_Click" Background="#FF16BED4"/>
+        <Button x:Name="B_Сравнить" Content="Сравнить" HorizontalAlignment="Left" Margin="617,172,0,0" VerticalAlignment="Top" Width="142" Click="B_Сравнить_Click" Background="#FF16BED4"/>
+        <TextBox x:Name="TbПервыйТраспорт" HorizontalAlignment="Left" Margin="450,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Background="#FF16BED4"/>
+        <TextBox x:Name="TbВторойТранспорт" HorizontalAlignment="Left" Margin="449,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Background="#FF16BED4"/>
+        <Label Content="Второй транспорт" HorizontalAlignment="Left" Margin="450,172,0,0" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Первый транспорт" HorizontalAlignment="Left" Margin="450,126,0,0" VerticalAlignment="Top" Width="138"/>
+    </Grid>
+</Window>
