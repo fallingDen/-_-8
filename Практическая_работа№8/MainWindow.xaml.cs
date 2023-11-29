@@ -57,8 +57,9 @@ namespace Практическая_работа_8
         }
 
         private void B_Записать_Click(object sender, RoutedEventArgs e)
-        {
-            if (!(TBГрузовойКорабль.Text != null
+             { 
+            if (!(TBГрузовойКорабль.Text != "" &&
+             !string.IsNullOrWhiteSpace (TBГрузовойКорабль.Text) 
             && int.TryParse(TBГрузоподъёмность.Text, out int b)
             && b > 0))
             {
@@ -88,10 +89,29 @@ namespace Практическая_работа_8
                 int rez = one.CompareTo(second);
                 switch (rez)
                 {
-                    case -1: MessageBox.Show("Грузоподъёмность первого больше чем второго"); break;
+                    case 1: MessageBox.Show("Грузоподъёмность первого больше чем второго"); break;
                     case 0: MessageBox.Show(" Интересный результат "); break;
-                    case 1: MessageBox.Show("Грузоподъёмность второго больше чем первого "); break;
+                    case -1: MessageBox.Show("Грузоподъёмность второго больше чем первого "); break;
                 }
+        }
+
+        private void Button_Копировать(object sender, RoutedEventArgs e)
+        {
+            if (!(int.TryParse(TbНомерКопируемойСтроки.Text, out int x)
+            && x < List.Items.Count + 1))
+            {
+                MessageBox.Show("Давай всё правильно вводи");
+                return;
+            }
+
+                ГрузовойКорабль one = (ГрузовойКорабль)List.Items[x - 1];     
+                ГрузовойКорабль n = (ГрузовойКорабль)one.Clone();
+                n.N = List.Items.Count + 1;
+                List.Items.Add(n);
+                
+                
+               
+
         }
     }
 }

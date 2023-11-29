@@ -10,12 +10,12 @@
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="1"/>
-                <GradientStop Color="#FF16BED4" Offset="0.513"/>
+                <GradientStop Color="#FF16BED4" Offset="0.946"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ListBox x:Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,23,375,222" Background="#FF16BED4"/>
-        <TextBox x:Name="TBГрузоподъёмность" HorizontalAlignment="Left" Margin="448,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FF16BED4"/>
-        <TextBox x:Name="TBГрузовойКорабль" HorizontalAlignment="Left" Margin="449,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="#FF16BED4"/>
+        <ListBox x:Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,23,10,222" Background="#FF16BED4"/>
+        <TextBox x:Name="TBГрузоподъёмность" HorizontalAlignment="Left" Margin="10,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FF16BED4"/>
+        <TextBox x:Name="TBГрузовойКорабль" HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Background="#FF16BED4"/>
         <Menu VerticalAlignment="Top" Grid.ColumnSpan="4" Height="18" Background="#FFE0EC0D">
             <MenuItem Header="О программе" Click="MenuItem_Click_О_программе" ToolTip="Информация о программе"  >
             </MenuItem>
@@ -24,13 +24,16 @@
             <MenuItem Header="Анекдот" Click="MenuItem_Click_Анекдот" ToolTip="Анекдот" >
             </MenuItem>
         </Menu>
-        <Label Content="Модель корабля" HorizontalAlignment="Left" Margin="448,31,0,0" VerticalAlignment="Top"/>
-        <Label Content="Грузоподъёмность т." HorizontalAlignment="Left" Margin="448,80,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="B_Записать" Content="Записать" HorizontalAlignment="Left" Margin="617,83,0,0" VerticalAlignment="Top" Width="142" Click="B_Записать_Click" Background="#FF16BED4"/>
-        <Button x:Name="B_Сравнить" Content="Сравнить" HorizontalAlignment="Left" Margin="617,172,0,0" VerticalAlignment="Top" Width="142" Click="B_Сравнить_Click" Background="#FF16BED4"/>
-        <TextBox x:Name="TbПервыйТраспорт" HorizontalAlignment="Left" Margin="450,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Background="#FF16BED4"/>
-        <TextBox x:Name="TbВторойТранспорт" HorizontalAlignment="Left" Margin="449,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Background="#FF16BED4"/>
-        <Label Content="Второй транспорт" HorizontalAlignment="Left" Margin="450,172,0,0" VerticalAlignment="Top" Width="139"/>
-        <Label Content="Первый транспорт" HorizontalAlignment="Left" Margin="450,126,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Модель корабля" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top"/>
+        <Label Content="Грузоподъёмность т." HorizontalAlignment="Left" Margin="10,257,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="B_Записать" Content="Записать" HorizontalAlignment="Left" Margin="10,318,0,0" VerticalAlignment="Top" Width="142" Click="B_Записать_Click" Background="#FF16BED4"/>
+        <Button x:Name="B_Сравнить" Content="Сравнить" HorizontalAlignment="Left" Margin="207,318,0,0" VerticalAlignment="Top" Width="142" Click="B_Сравнить_Click" Background="#FF16BED4"/>
+        <TextBox x:Name="TbПервыйТраспорт" HorizontalAlignment="Left" Margin="207,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Background="#FF16BED4"/>
+        <TextBox x:Name="TbВторойТранспорт" HorizontalAlignment="Left" Margin="207,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Background="#FF16BED4"/>
+        <Label Content="Второй транспорт" HorizontalAlignment="Left" Margin="207,262,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Первый транспорт" HorizontalAlignment="Left" Margin="207,212,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="TbНомерКопируемойСтроки" HorizontalAlignment="Left" Margin="400,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Background="#FF16BED4"/>
+        <Button Content="Копировать" HorizontalAlignment="Left" Margin="400,318,0,0" VerticalAlignment="Top" Width="142" Background="#FF16BED4" Click="Button_Копировать"/>
+        <Label Content="№ копируемой строки" HorizontalAlignment="Left" Margin="400,262,0,0" VerticalAlignment="Top" Width="142"/>
     </Grid>
 </Window>
